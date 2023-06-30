@@ -1,38 +1,129 @@
-.App {
+body{
+  margin: 0;
+  padding: 0;
+  /* overflow: hidden; */
+  background-color: yellowgreen;
+}
+.header
+{
   text-align: center;
+  font-weight: bold;
+  font-size: 50px;
+  padding-top: 3vh;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+img {
+  width: 500px;
+  height: 300px;
+  background-color: white;
+  padding: 10px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.img-section
+{
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  /* margin: 10px; */
+  /* background-color: red; */
+}
+.choice-flex{
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  /* padding: 100px; */
 }
-
-.App-link {
-  color: #61dafb;
+.choice-grid{
+  display: grid;
+  grid-template-columns: auto auto;
+  padding-top: 2vw;
+  column-gap: 1vw;
+  row-gap: 1vw;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+#choice1{
+  width: 40vw;
+  text-align: center;
+  padding: 4vh;
+  background-color: lightgray;
+  /* font-size: 50px; */
+}
+#choice2{
+  width: 40vw;
+  padding: 4vh;
+  text-align: center;
+  background-color: lightgray;
+}
+#choice3{
+  width: 40vw;
+  padding: 4vh;
+  text-align: center;
+  background-color: lightgray;
+}
+#choice4{
+  width: 40vw;
+  padding: 4vh;
+  text-align: center;
+  background-color: lightgray;
+}
+@media screen and (max-width: 1000px) {
+  .img-section{
+    /* background-color: green; */
   }
-  to {
-    transform: rotate(360deg);
+  img {
+    width: 80vw;
+    height: 30vh;
   }
+  .img-section
+  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 10vh;
+  }
+  .choice-flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 20vh;
+    /* padding: 50px; */
+  }
+  .choice-grid{
+    display: grid;
+    grid-template-columns: auto auto;
+    padding-top: 2vw;
+    column-gap: 1vw;
+    row-gap: 1vw;
+  }
+  #choice1{
+    width: 300px;
+    text-align: center;
+    font-size: 50px;
+    background-color: lightgray;
+  }
+  #choice2{
+    width: 300px;
+    font-size: 50px;
+    text-align: center;
+    background-color: lightgray;
+  }
+  #choice3{
+    width: 300px;
+    font-size: 50px;
+    text-align: center;
+    background-color: lightgray;
+  }
+  #choice4{
+    width: 300px;
+    font-size: 50px;
+    text-align: center;
+    background-color: lightgray;
+  }
+  .header
+{
+  text-align: center;
+  font-weight: bold;
+  font-size: 80px;
+  /* padding-top: 3vh; */
+}
 }
