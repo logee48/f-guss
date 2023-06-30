@@ -163,7 +163,7 @@ function App() {
   }
   return (
     <div>
-      <div className="header">Welcome to F-guss</div>
+      <div className="header">Welcome to f-guss</div>
       <div>
         <div className="img-section"><img style={{border:"solid 10px black"}}src={data[random_num[rand_one]].url} alt={data[random_num[rand_one]].name}></img></div>
         {/* <div>{data[random_num[rand_one]].name}</div> */}
